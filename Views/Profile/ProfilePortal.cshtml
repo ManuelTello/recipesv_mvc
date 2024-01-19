@@ -1,0 +1,17 @@
+﻿@model recipesv2.ViewModels.Session.PortalViewModel;
+@{
+    ViewBag.Title = "Portal";
+}
+
+@if(Model.User == null)
+{
+    <h1>Sorry this profile doesnt exists</h1>   
+}
+else
+{
+    <h1>@Model.User.Username</h1>
+    <h1>@Model.User.Email</h1>
+    <h1>@Model.User.Name</h1>
+    <h1>@Model.User.DateOfBirth</h1>
+    <h1>@Model.User.DateSignedUp</h1>
+}
